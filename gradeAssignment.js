@@ -1,11 +1,13 @@
 function gradeAssignment() {
-    let score = prompt("Enter your score:");
+    let grade = prompt("Enter your grade:");
 
-    if (score >= 90) {
+    if (grade === null || grade === "") {
+    alert("Input was canceled.");
+    }else if (grade >= 90) {
     alert("Excellent");
-    } else if (score >= 80 && score <= 89) {
+    } else if (grade >= 80 && grade <= 89) {
     alert("Good");
-    } else if (score >= 70 && score <= 79) {
+    } else if (grade >= 70 && grade <= 79) {
     alert("Fair");
     } else {
     alert("Needs Improvement");
