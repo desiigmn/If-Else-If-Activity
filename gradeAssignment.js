@@ -3,6 +3,8 @@ function gradeAssignment() {
 
     if (grade === null || grade === "") {
     alert("Input was canceled.");
+    }else if (grade > 100) {
+    alert("Invalid.")
     }else if (grade >= 90) {
     alert("Excellent");
     } else if (grade >= 80 && grade <= 89) {
